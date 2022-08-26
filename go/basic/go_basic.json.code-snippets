@@ -1,0 +1,44 @@
+// Name: Golang basic snippets.
+// Desc: Based on examples from gobyexample.com
+// Source Name: Go By Example
+// Source Url: https://gobyexample.com/
+{
+    "Go Hello": {
+        "scope": "go",
+        "prefix": "go: hello",
+        "body": [
+            "package main\n",
+            "import (",
+            "\t\"fmt\"",
+            ")\n",
+            "func main(){",
+            "\tfmt.Println(\"Hello ${1:World}!!!\")",
+            "}",
+        ],
+        "description": "Hello World in Golang."
+    },
+    "Go Variable": {
+        "scope": "go",
+        "prefix": "go: var",
+        "body": [
+            "var $1 string = \"$2\"",
+        ],
+        "description": "Declare a variable in Golang."
+    },
+    "Go Short Variable": {
+        "scope": "go",
+        "prefix": "go: short var",
+        "body": [
+            "$1 := \"$2\"",
+        ],
+        "description": "Declare a variable using shorthand in Golang."
+    },
+    "Go Constant": {
+        "scope": "go",
+        "prefix": "go: const",
+        "body": [
+            "const $1 string = \"$2\"",
+        ],
+        "description": "Declare a constant in Golang."
+    }
+}
