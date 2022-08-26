@@ -80,4 +80,14 @@
 		],
 		"description": "Declare a map in Golang."
 	},
+    "Go Range": {
+		"scope": "go",
+		"prefix": "go: range",
+		"body": [
+			"for k, v := range $1 {",
+			"\tfmt.Printf(\"%s -> %s\", k, v)",
+			"}"
+		],
+		"description": "A range in Golang."
+	},
 }
