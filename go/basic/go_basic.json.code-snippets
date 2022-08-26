@@ -40,5 +40,44 @@
             "const $1 string = \"$2\"",
         ],
         "description": "Declare a constant in Golang."
-    }
+    },
+    "Go Condition": {
+		"scope": "go",
+		"prefix": "go: cond",
+		"body": [
+			"switch $1 {",
+			"case $2:",
+			"\tfmt.Println(\"Something\")",
+			"case $3:",
+			"\tfmt.Println(\"Something else\")",
+			"}"
+		],
+		"description": "Declare a condition in Golang."
+	},
+	"Go Array": {
+		"scope": "go",
+		"prefix": "go: arr",
+		"body": [
+			"var $1 [$2]$3"
+		],
+		"description": "Declare an array in Golang."
+	},
+	"Go Slice": {
+		"scope": "go",
+		"prefix": "go: slice",
+		"body": [
+			"${1:a} := make([]$2, $3)",
+			"$1 = append($1, ${4:\"some_val\"})"
+		],
+		"description": "Declare a slice in Golang."
+	},
+	"Go Map": {
+		"scope": "go",
+		"prefix": "go: map",
+		"body": [
+			"${1:m} := make(map[${2:string}]${3:string})",
+			"${1}[$4]=$5"
+		],
+		"description": "Declare a map in Golang."
+	},
 }
