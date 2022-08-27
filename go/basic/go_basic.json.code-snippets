@@ -127,4 +127,45 @@
 		],
 		"description": "Pointers in Golang."
 	},
+    "Go Struct": {
+		"scope": "go",
+		"prefix": "go: struct",
+		"body": 
+
+		[
+			"type person struct {", 
+			"\tname string", 
+			"\tage  int", 
+			"}\n", 
+			"func createStruct() {", 
+			"\ts := person{name: \"Sean\", age: 50}\n", 
+			"\tfmt.Println(\"Details: \",s.name)",
+			"}"
+		],
+		"description": "Buffered Channels in Golang."
+	},
+	"Go Struct Embedded": {
+		"scope": "go",
+		"prefix": "go: struct-embedded",
+		"body":
+		[
+			"type ${1:base} struct {", 
+			"\tsampleValX int", 
+			"}\n",
+			"type ${2:container} struct {",
+			"\t$1", 
+			"\tsampleValY string", 
+			"}",
+			"func sampleCall(){",
+			"\tc := $2{",
+			"\t\t$1 : $1{",
+			"\t\t\tsampleValX: 1,",
+			"\t\t},",
+			"\t\tsampleValY: \"something\",",
+			"\t}",
+			"\tfmt.Println(c.sampleValY)",
+			"}"
+		],
+		"description": "Embedded Struct in Golang."
+	},
 }
