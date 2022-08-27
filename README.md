@@ -29,3 +29,25 @@ You can setup snippets in VS Code with the following steps:
 ![EnterNewSnippet](https://github.com/razaibi/snippington/raw/main/img/VSCode_Step_05.png)
 
 5. Once you create the new file, you copy the contents from the files listed in the folders in this repository (dotnet, go, etc).
+
+Here is a sample snippet:
+
+```json
+{
+    "Go Hello": {
+        "scope": "go",
+        "prefix": "go: hello",
+        "body": [
+            "package main\n",
+            "import (",
+            "\t\"fmt\"",
+            ")\n",
+            "func main(){",
+            "\tfmt.Println(\"Hello ${1:World}!!!\")",
+            "}",
+        ],
+        "description": "Hello World in Golang."
+    }
+}
+
+```
