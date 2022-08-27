@@ -180,4 +180,29 @@
 		],
 		"description": "Error in Golang."
 	},
+    "Go Routine Anonymous": {
+		"scope": "go",
+		"prefix": "go: routine-anonymous",
+		"body": 
+		[
+			"go func(msg string) {", 
+			"\tfmt.Println(msg)",  
+			"}(\"sample msg\")", 
+		],
+		"description": "Go routine with anonymouse func in Golang."
+	},
+	"Go Routine": {
+		"scope": "go",
+		"prefix": "go: routine-basic",
+		"body": 
+		[
+			"func sampleFunc(msg string){", 
+			"\tfmt.Println(msg)",  
+			"}\n",
+			"func callerFunc(){",
+			"\tgo sampleFunc(\"sample msg\")",
+			"}"
+		],
+		"description": "Go routine with anonymouse func in Golang."
+	},
 }
