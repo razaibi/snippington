@@ -51,3 +51,7 @@ Here is a sample snippet:
 }
 
 ```
+
+#### Attribution
+
+*[Go Basic Snippets](https://raw.githubusercontent.com/razaibi/snippington/main/go/basic/go_basic.json.code-snippets)* : based on [Go By Example](https://gobyexample.com/)
