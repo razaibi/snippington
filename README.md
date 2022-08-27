@@ -55,3 +55,5 @@ Here is a sample snippet:
 #### Attribution
 
 *[Go Basic Snippets](https://raw.githubusercontent.com/razaibi/snippington/main/go/basic/go_basic.json.code-snippets)* : based on [Go By Example](https://gobyexample.com/)
+
+*[Go Chunked File Read](https://github.com/kgrz/reading-files-in-go/blob/master/reading-chunkwise-multiple.go)* : based on [Reading Files in Go](https://github.com/kgrz/reading-files-in-go)
