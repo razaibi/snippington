@@ -168,4 +168,16 @@
 		],
 		"description": "Embedded Struct in Golang."
 	},
+    "Go Error": {
+		"scope": "go",
+		"prefix": "go: error",
+		"body": 
+		[
+			"var someCondition bool = false", 
+			"if (someCondition){",  
+			"\terrors.New(\"Something broke.\")", 
+			"}"
+		],
+		"description": "Error in Golang."
+	},
 }
