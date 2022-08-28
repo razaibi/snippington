@@ -205,6 +205,24 @@
 		],
 		"description": "Go routine with anonymouse func in Golang."
 	},
+	"Go Channel": {
+		"scope": "go",
+		"prefix": "go: channel",
+		"body":
+		[
+			"\/\/Creating a channel.", 
+			"ch := make(chan string)\n", 
+			"\/\/Blocking send to channel.",
+			"go func() { ",
+			"\tch <- \"ping\" ",
+			"}()\n", 
+			"\/\/Blocking read from channel.",
+			"msg := <-ch", 
+			"fmt.Println(msg)", 
+			""
+		],
+		"description": "Channel in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
