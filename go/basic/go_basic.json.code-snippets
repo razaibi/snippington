@@ -240,6 +240,31 @@
 		],
 		"description": "Buffered Channels in Golang."
 	},
+	"Go Channel Select": {
+		"scope": "go",
+		"prefix": "go: channel-wait-select",
+		"body": [
+			"${1:c1} := make(chan string)",
+			"${2:c2} := make(chan string)\n",
+			"go func() {",
+			"\ttime.Sleep(1 * time.Second)",
+			"\t$1 <- \"one\"",
+			"}()\n",
+			"go func() {",
+			"\ttime.Sleep(2 * time.Second)",
+			"\t$2 <- \"two\"",
+			"}()\n",
+			"for i := 0; i < 2; i++ {",
+			"\tselect {",
+			"\tcase ${3:msg1} := <-$1:",
+			"\t\tfmt.Println(\"received\", $3)",
+			"\tcase ${4:msg2} := <-$2:",
+			"\t\tfmt.Println(\"received\", $4)",
+			"\t}",
+			"}"
+		],
+		"description": "Using Select to wait Channels in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
