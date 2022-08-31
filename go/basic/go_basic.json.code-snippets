@@ -223,6 +223,23 @@
 		],
 		"description": "Channel in Golang."
 	},
+	"Go Buffered Channel": {
+		"scope": "go",
+		"prefix": "go: channel-buffered",
+		"body": [
+			"\n\/\/Buffered channels accept limited no.",
+			"\/\/of values without concurrent receiver.\n",
+			"\/\/Creating buffered Channel.",
+			"ch := make(chan string, 2)\n",
+			"\/\/Sending to Channel.",
+			"ch <- \"buffered\"",
+			"ch <- \"channel\"\n",
+			"\/\/Values received later.",
+			"fmt.Println(<-ch)",
+			"fmt.Println(<-ch)"
+		],
+		"description": "Buffered Channels in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
