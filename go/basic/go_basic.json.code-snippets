@@ -265,6 +265,21 @@
 		],
 		"description": "Using Select to wait Channels in Golang."
 	},
+	"Go Channels Range": {
+		"scope": "go",
+		"prefix": "go: channels-range",
+		"body": 
+		[
+			"${1:ch} := make(chan string, 2)",
+			"$1 <- \"first_msg\"",
+			"$1 <- \"second_msg\"",
+			"close($1)",
+			"for ${2:elem} := range $1 {",
+			"\tfmt.Println($2)",
+			"}"
+		],
+		"description": "Channels Range in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
