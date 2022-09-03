@@ -318,6 +318,14 @@
 		],
 		"description": "Worker Pools with Channels in Golang."
 	},
+	"Go WaitGroup": {
+		"scope": "go",
+		"prefix": "go: waitgroup",
+		"body": [
+			"var ${1:wg} sync.WaitGroup",
+		],
+		"description": ""
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
