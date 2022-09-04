@@ -326,6 +326,42 @@
 		],
 		"description": ""
 	},
+	"Go WaitGroup Snippet": {
+		"scope": "go",
+		"prefix": "go: waitgroup-snippet",
+		"body": 
+		[
+			"func worker(id int){", 
+			"\tfmt.Printf(\"Worker %d starting\", id)",  
+			"\ttime.Sleep(time.Second)",
+			"\tfmt.Printf(\"Worker %d done\", id)",
+			"}\n", 
+			"func callerFunc (){", 
+			"\t\/\/Create WaitGroup to wait on",
+			"\t\/\/all goroutines to finish.",
+			"\tvar wg sync.WaitGroup\n",
+			"\t\/\/Increment WaitGroup and",
+			"\t\/\/create multiple gorountines.",
+			"\tfor i := 1; i <= 5; i++ {",
+			"\t\twg.Add(1)",
+			"\t\ti := i",
+			"\t\t\/\/Wrap the worker call in a closure that",
+			"\t\t\/\/makes sure to tell the WaitGroup",
+			"\t\t\/\/that this worker is done.",
+			"\t\tgo func() {",
+			"\t\t\tdefer wg.Done()",
+			"\t\t\tworker(i)",
+			"\t\t}()",
+			"\t}",
+			"\t\/\/Block until the WaitGroup",
+			"\t\/\/counter goes back to 0.",
+			"\twg.Wait()",
+			"\t\/\/Note: Order of workers starting up and",
+			"\t\/\/finishing is likely to be different.",
+			"}"
+		],
+		"description": "WaitGroup in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
