@@ -16,14 +16,25 @@
                 "\t}", 
                 "}"
         ],
-        "description": "C Sharp class."
+        "description": "C# class."
     },
     "C# Property": {
         "scope": "csharp",
         "prefix": "csharp: prop",
         "body": [
-                "public string ${1:SampleProp} { get; set; }", 
+                "public string ${1:SampleProperty} { get; set; }", 
         ],
-        "description": "C Sharp property."
+        "description": "C# property."
+    },
+    "C# Constructor": {
+        "scope": "csharp",
+        "prefix": "csharp: constructor",
+        "body": [
+                "public ${1:Class}(string val)", 
+                "{",
+                "\t${2:SampleProperty}=val;",
+                "}",
+        ],
+        "description": "C# constructor."
     },
 }
