@@ -1,0 +1,21 @@
+// Name: C# basic snippets.
+// Desc: Based on examples from C# documentation.
+// Source Name: C# Documentation
+// Source Url: https://docs.microsoft.com/en-us/dotnet/csharp/
+{
+	"C# Class": {
+        "scope": "csharp",
+        "prefix": "csharp: class",
+        "body": [
+                "public class ${1:Sample}", 
+                "{", 
+                "\tpublic string ${2:SampleProp} { get; set;}",
+                "\tpublic ${1}(string val)", 
+                "\t{", 
+                "\t\t${2} = val;", 
+                "\t}", 
+                "}"
+        ],
+        "description": "C Sharp class."
+    },
+}
