@@ -362,6 +362,31 @@
 		],
 		"description": "WaitGroup in Golang."
 	},
+	"Go Mutex": {
+		"scope": "go",
+		"prefix": "go: mutex-snippet",
+		"body": 
+		[
+			"var x  = 0\n", 
+			"func sampleAction(wg *sync.WaitGroup, m *sync.Mutex) {", 
+			"\tm.Lock()", 
+			"\tx = x + 1", 
+			"\tm.Unlock()", 
+			"\twg.Done()", 
+			"}\n", 
+			"func callerFunc() {", 
+			"\tvar w sync.WaitGroup", 
+			"\tvar m sync.Mutex", 
+			"\tfor i := 0; i < 10; i++ {", 
+			"\t\tw.Add(1)", 
+			"\t\tgo sampleAction(&w, &m)", 
+			"\t}", 
+			"\tw.Wait()", 
+			"\tfmt.Println(\"value of x\", x)", 
+			"}"]
+		,
+		"description": "Mutex snippet in Golang."
+	},
     "Go Read File Chunked": {
 		"scope": "go",
 		"prefix": "go: read-file-chunked",
