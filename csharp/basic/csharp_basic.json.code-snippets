@@ -26,6 +26,14 @@
         ],
         "description": "C# property."
     },
+    "C# Property Read Only": {
+        "scope": "csharp",
+        "prefix": "csharp: prop-readonly",
+        "body": [
+                "public string ${1:SampleProperty} { get; }", 
+        ],
+        "description": "C# property read only."
+    },
     "C# Constructor": {
         "scope": "csharp",
         "prefix": "csharp: constructor",
@@ -36,5 +44,13 @@
                 "}",
         ],
         "description": "C# constructor."
+    },
+    "C# Class Instance": {
+        "scope": "csharp",
+        "prefix": "csharp: class-instance",
+        "body": [
+                "${1:SampleClass} ${2:sampleObject} = new ${1}();",
+        ],
+        "description": "C# object of a class."
     },
 }
