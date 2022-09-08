@@ -53,4 +53,15 @@
         ],
         "description": "C# object of a class."
     },
+    "C# Record": {
+        "scope": "csharp",
+        "prefix": "csharp: record",
+        "body": [
+                "public record ${1:SampleRecord}(", 
+                "string ${2:SamplePropertyOne},", 
+                "string ${3:SamplePropertyTwo}", 
+                ");"
+        ],
+        "description": "C# record."
+    },
 }
