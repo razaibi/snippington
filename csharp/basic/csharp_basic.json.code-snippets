@@ -83,4 +83,17 @@
         ],
         "description": "C# interface."
     },
+    "C# Generic List": {
+        "scope": "csharp",
+        "prefix": "csharp: generic-list",
+        "body": [
+                "public class GenericList<T>", 
+                "{", 
+                "\tpublic void Add(T input) { }", 
+                "}\n", 
+                "GenericList<${1:int}> list1 = new GenericList<${1}>();", 
+                "list1.Add(1);"
+        ],
+        "description": "C# generic list."
+    },
 }
