@@ -96,4 +96,12 @@
         ],
         "description": "C# generic list."
     },
+    "C# Array List": {
+        "scope": "csharp",
+        "prefix": "csharp: array-list",
+        "body": [
+                "ArrayList ${1:sampleArray} = new ArrayList();", 
+        ],
+        "description": "C# array list."
+    },
 }
