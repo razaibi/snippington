@@ -75,4 +75,12 @@
         ],
         "description": "C# record instance."
     },
+    "C# Interface": {
+        "scope": "csharp",
+        "prefix": "csharp: interface",
+        "body": [
+                "public interface I${1:SampleInterface}{}", 
+        ],
+        "description": "C# interface."
+    },
 }
