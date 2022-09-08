@@ -64,4 +64,15 @@
         ],
         "description": "C# record."
     },
+    "C# Record Instance": {
+        "scope": "csharp",
+        "prefix": "csharp: record-instance",
+        "body": [
+                "${1:SampleRecord} ${2:sampleRecordObject} = new(", 
+                "\"sampleValOne\",", 
+                "\"sampleValTwo\"", 
+                ");"
+        ],
+        "description": "C# record instance."
+    },
 }
