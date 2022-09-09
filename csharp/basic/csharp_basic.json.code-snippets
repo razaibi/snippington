@@ -104,4 +104,12 @@
         ],
         "description": "C# array list."
     },
+    "C# Bit Array": {
+        "scope": "csharp",
+        "prefix": "csharp: bit-array",
+        "body": [
+                "BitArray ${1:sampleBitArray} = new BitArray( 5, true );", 
+        ],
+        "description": "C# bit array."
+    },
 }
