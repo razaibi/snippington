@@ -128,4 +128,17 @@
         ],
         "description": "C# console write."
     },
+    "C# Variable Pattern Match": {
+        "scope": "csharp",
+        "prefix": "csharp: pattern-match-variable",
+        "body": [
+			"var selectedVal = \"Player A\" switch", 
+			"{", 
+			"\t\"${1:Player A}\" => \"Hi Player A!\",", 
+			"\t\"${2:Player B}\" => \"Hi Player B!\",", 
+			"\t_ => \"Not Set\"", 
+			"};"
+		],
+        "description": "C# pattern match variable."
+    },
 }
