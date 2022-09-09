@@ -112,4 +112,20 @@
         ],
         "description": "C# bit array."
     },
+    "C# Console Write": {
+        "scope": "csharp",
+        "prefix": "csharp: console-write",
+        "body": [
+                "Console.Write(\"${1:Hello World!}\");", 
+        ],
+        "description": "C# console write."
+    },
+	"C# Console Write Line": {
+        "scope": "csharp",
+        "prefix": "csharp: console-write-line",
+        "body": [
+                "Console.WriteLine(\"${1:Hello World!}\");", 
+        ],
+        "description": "C# console write."
+    },
 }
