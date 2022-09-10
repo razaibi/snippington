@@ -272,4 +272,24 @@
 		],
         "description": "C# If Then Else."
     },
+    "C# Switch Case": {
+        "scope": "csharp",
+        "prefix": "csharp: switch-case",
+        "body": [
+		"int someVal=15;", 
+		"switch (someVal)", 
+		"{", 
+		"case < 5:", 
+		"\tConsole.WriteLine(\"This value.\");", 
+		"\tbreak;", 
+		"case > 10:", 
+		"\tConsole.WriteLine(\"That value\");", 
+		"\tbreak;", 
+		"default:", 
+		"\tConsole.WriteLine(\"Default value\");", 
+		"\tbreak;", 
+		"}"
+	],
+        "description": "C# switch case statement."
+    },
 }
