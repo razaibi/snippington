@@ -141,4 +141,13 @@
 		],
         "description": "C# pattern match variable."
     },
+    "C# Array Lambda": {
+        "scope": "csharp",
+        "prefix": "csharp: array-lambda",
+        "body": [
+			"int[] ${1:sampleArray} = { 2, 3, 4, 5 };", 
+			"var squaredVals = ${1}.Select(x => x * x);"
+		],
+        "description": "C# array lambda implementation."
+    },
 }
