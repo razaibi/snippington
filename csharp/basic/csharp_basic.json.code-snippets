@@ -231,4 +231,18 @@
         ],
         "description": "C# for each."
     },
+    "C# Do While Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: do-while",
+        "body": [
+		"int n = 0;", 
+		"do", 
+		"{", 
+		"\tConsole.Write(n);", 
+		"\tn++;", 
+		"} while (n < 5);"
+	],
+        "description": "C# do while."
+    },
+    
 }
