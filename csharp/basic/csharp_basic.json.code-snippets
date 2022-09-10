@@ -200,4 +200,12 @@
         ],
         "description": "C# lambda natural."
     },
+    "C# Lambda Explicit Type": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-explicit",
+        "body": [
+			"var choose = object (bool b) => b ? 1 : \"two\";", 
+		],
+        "description": "C# lambda explicit."
+    },
 }
