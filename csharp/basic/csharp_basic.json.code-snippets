@@ -257,5 +257,19 @@
 		],
         "description": "C# while loop."
     },
-    
+    "C# If Then Else": {
+        "scope": "csharp",
+        "prefix": "csharp: if-then-else",
+        "body": [
+			"int someVal=15;", 
+			"if (someVal < 20)", 
+			"{", 
+			"\tConsole.WriteLine(\"This Val.\");", 
+			"}else", 
+			"{", 
+			"\tConsole.WriteLine(\"That Val.\");", 
+			"}"
+		],
+        "description": "C# If Then Else."
+    },
 }
