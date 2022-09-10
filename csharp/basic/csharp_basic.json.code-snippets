@@ -150,4 +150,25 @@
 		],
         "description": "C# array lambda implementation."
     },
+    "C# Lambda Statement": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-statement",
+        "body": [
+			"Action<string> hello = param =>", 
+			"{", 
+			"\tstring helloString = $\"Hello {param}!\";", 
+			"\tConsole.WriteLine(helloString);", 
+			"};", 
+			"hello(\"World\");"
+		],
+        "description": "C# lambda statement."
+    },
+    "C# Lambda Expression": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-expr",
+        "body": [
+			"Action line = () => Console.WriteLine();", 
+		],
+        "description": "C# lambda expression."
+    },
 }
