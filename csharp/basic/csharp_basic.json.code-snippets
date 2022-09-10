@@ -208,4 +208,27 @@
 		],
         "description": "C# lambda explicit."
     },
+    "C# For Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: for-loop",
+        "body": [
+                "for (int i = 0; i < 3; i++)", 
+                "{", 
+                "\tConsole.Write(i);", 
+                "}"
+        ],
+        "description": "C# for loop."
+    },
+    "C# For Each Loop": {
+        "scope": "csharp",
+        "prefix": "csharp: for-each",
+        "body": [
+                "var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };", 
+                "foreach (int element in fibNumbers)", 
+                "{", 
+                "\tConsole.Write($\"{element} \");", 
+                "}"
+        ],
+        "description": "C# for each."
+    },
 }
