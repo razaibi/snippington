@@ -171,4 +171,16 @@
 		],
         "description": "C# lambda expression."
     },
+    "C# Lambda Async": {
+        "scope": "csharp",
+        "prefix": "csharp: lambda-async",
+        "body": [
+			"private async Task SampleAsync()", 
+			"{", 
+			"\tawait Task.Delay(1000);", 
+			"}\n", 
+			"await SampleAsync();"
+		],
+        "description": "C# lambda async."
+    },
 }
