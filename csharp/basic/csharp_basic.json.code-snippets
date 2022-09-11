@@ -305,9 +305,36 @@
         "scope": "csharp",
         "prefix": "csharp: string-interpolation",
         "body": [
-			"string sampleString = \"World!\";", 
-			"string str = $\"Hello {sampleString}\";", 
-		],
+		"string sampleString = \"World!\";", 
+		"string str = $\"Hello {sampleString}\";", 
+	],
         "description": "C# string interpolation."
+    },
+    "C# String Contains": {
+        "scope": "csharp",
+        "prefix": "csharp: string-contains",
+        "body": [
+		"string sampleString = \"Hello World\";", 
+		"bool searchResult = sampleString.Contains(\"Hello\");", 
+	],
+        "description": "C# check if string contains."
+    },
+	"C# String Starts With": {
+        "scope": "csharp",
+        "prefix": "csharp: string-startswith",
+        "body": [
+		"string sampleString = \"Hello World\";", 
+		"bool searchResult = sampleString.StartsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
+	],
+        "description": "C# check if string starts with."
+    },
+	"C# String Endswith": {
+        "scope": "csharp",
+        "prefix": "csharp: string-endswith",
+        "body": [
+		"string sampleString = \"Hello World\";", 
+		"bool searchResult = sampleString.EndsWith(\"Hello\", System.StringComparison.CurrentCultureIgnoreCase);", 
+	],
+        "description": "C# check if string ends with."
     },
 }
