@@ -348,4 +348,28 @@
 		],
         "description": "C# convert type."
     },
+    "C# Dictionary": {
+        "scope": "csharp",
+        "prefix": "csharp: dictionary",
+        "body": [
+		"using System.Collections.Generic;\n",
+		"public class StudentName",
+		"{",
+		"\tpublic string FirstName { get; set; } = \"\";",
+		"\tpublic string LastName { get; set; } = \"\";",
+		"\tpublic int ID { get; set; } = 0;",
+		"}\n",
+		"var students = new Dictionary<int, StudentName>()", 
+		"{", 
+		"\t{ 111, new StudentName", 
+		"\t\t{", 
+		"\t\t\tFirstName=\"Nicola\",", 
+		"\t\t\tLastName=\"Tesla\",", 
+		"\t\t\tID=211", 
+		"\t\t}", 
+		"\t},", 
+		"};"
+	],
+        "description": "C# dictionary snippet."
+    },
 }
