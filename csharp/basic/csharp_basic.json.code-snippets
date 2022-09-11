@@ -292,4 +292,22 @@
 	],
         "description": "C# switch case statement."
     },
+    "C# String Split": {
+        "scope": "csharp",
+        "prefix": "csharp: string-split",
+        "body": [
+			"string phrase = \"The quick brown fox jumps over the lazy dog.\";", 
+			"string[] words = phrase.Split(' ');", 
+		],
+        "description": "C# split string."
+    },
+    "C# String Interpolation": {
+        "scope": "csharp",
+        "prefix": "csharp: string-interpolation",
+        "body": [
+			"string sampleString = \"World!\";", 
+			"string str = $\"Hello {sampleString}\";", 
+		],
+        "description": "C# string interpolation."
+    },
 }
