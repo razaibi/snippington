@@ -337,4 +337,15 @@
 	],
         "description": "C# check if string ends with."
     },
+    "C# Typecast Explicit": {
+        "scope": "csharp",
+        "prefix": "csharp: typecast-explicit",
+        "body": [
+			"double x = 1234.7;",
+			"int a;",
+			"a = (int)x;",
+			"System.Console.WriteLine(a);",
+		],
+        "description": "C# convert type."
+    },
 }
