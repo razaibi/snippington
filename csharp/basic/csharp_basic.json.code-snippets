@@ -372,4 +372,19 @@
 	],
         "description": "C# dictionary snippet."
     },
+    "C# Query": {
+        "scope": "csharp",
+        "prefix": "csharp: query",
+        "body": [
+		"var customQuery =", 
+		"\tfrom student in students",
+		"\twhere student.ExamScore > 10", 
+		"\tselect new { student.FirstName };\n", 
+		"foreach (var obj in customQuery)", 
+		"{", 
+		"\tConsole.WriteLine(obj.FirstName);", 
+		"}"
+	],
+        "description": "C# query."
+    },
 }
