@@ -419,4 +419,12 @@
 		],
         "description": "C# array multi-dimensional initialization."
     },
+    "C# Array As Argument": {
+        "scope": "csharp",
+        "prefix": "csharp: array-arg",
+        "body": [
+			"${1:int}[] arr", 
+		],
+        "description": "C# array as argument."
+    },
 }
