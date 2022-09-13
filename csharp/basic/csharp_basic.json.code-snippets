@@ -411,4 +411,12 @@
 		],
         "description": "C# array multi-dimensional."
     },
+    "C# Array Multidimensional Initialization": {
+        "scope": "csharp",
+        "prefix": "csharp: array-multi-init",
+        "body": [
+			"${1:int}[,] ${2:array} = { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };", 
+		],
+        "description": "C# array multi-dimensional initialization."
+    },
 }
