@@ -403,4 +403,12 @@
 		],
         "description": "C# array initialization."
     },
+    "C# Array Multidimensional": {
+        "scope": "csharp",
+        "prefix": "csharp: array-multi",
+        "body": [
+			"${1:int}[,] ${2:array} = new ${1}[4, 2];", 
+		],
+        "description": "C# array multi-dimensional."
+    },
 }
