@@ -1,0 +1,14 @@
+// Name: Golang web snippets with Gin Gonic.
+// Desc: Based on Gin Gonic documentation.
+// Source Name: Gin Gonic Documentation
+// Source Url: https://gin-gonic.com/docs/
+{
+    "Go Gin Import": {
+        "scope": "go",
+        "prefix": "go: gin-import",
+        "body": [
+            "import \"github.com/gin-gonic/gin\"",
+        ],
+        "description": "Import Gin Gonic framework."
+    },
+}
