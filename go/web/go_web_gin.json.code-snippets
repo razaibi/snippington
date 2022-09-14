@@ -11,4 +11,25 @@
         ],
         "description": "Import Gin Gonic framework."
     },
+    "Go Http Import": {
+        "scope": "go",
+        "prefix": "go: http-import",
+        "body": [
+            "import \"net/http\"",
+        ],
+        "description": "Import Net Http."
+    },
+    "Go Gin Get Route": {
+        "scope": "go",
+        "prefix": "go: gin-get-route",
+        "body": [
+            "r := gin.Default()", 
+            "r.GET(\"/ping\", func(c *gin.Context) {", 
+            "\tc.JSON(200, gin.H{", 
+            "\t\t\"message\": \"pong\",", 
+            "\t})", 
+            "})"
+        ],
+        "description": "Go Gin get route."
+    },
 }
