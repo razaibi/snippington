@@ -427,4 +427,14 @@
 		],
         "description": "C# array as argument."
     },
+    "C# Try Parse": {
+        "scope": "csharp",
+        "prefix": "csharp: try-parse",
+        "body": [
+			"int i = 0;", 
+			"string s = \"108\";",
+			"bool result = int.TryParse(s, out i);"
+		],
+        "description": "C# try parse if type can be converted."
+    },
 }
