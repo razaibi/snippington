@@ -437,4 +437,20 @@
 		],
         "description": "C# try parse if type can be converted."
     },
+    "C# Indexer": {
+        "scope": "csharp",
+        "prefix": "csharp: indexer",
+        "body": [
+			"class SampleCollection<T>", 
+			"{", 
+			"\tprivate T[] arr = new T[100];\n", 
+			"\tpublic T this[int i]", 
+			"\t{", 
+			"\t\tget => arr[i];", 
+			"\t\tset => arr[i] = value;", 
+			"\t}", 
+			"}"
+		],
+        "description": "C# indexer."
+    },
 }
